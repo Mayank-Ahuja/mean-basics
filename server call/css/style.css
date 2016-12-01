@@ -1,0 +1,36 @@
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.disp{
+    display: inline-block;
+    width: 20%;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+li img{
+    width: 95%;
+}
+
+.mName{
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+
+.mPrice{
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}

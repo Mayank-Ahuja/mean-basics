@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="libs/angular.min.js"></script>
+    <script src="calcapp.js"></script>
+    <script src="models/calcfactory.js"></script>
+    <script src="controllers/calcController.js"></script>
+</head>
+<body ng-app="myCalcModule" ng-controller="calcController">
+   <table>
+       <tr>
+           <td>
+               <lable>First Number</lable>
+           </td>
+           <td>
+               <input type="text" ng-model="firstNo">
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <lable>second Number</lable>
+           </td>
+           <td>
+               <input type="text" ng-model="secondNo">
+           </td>
+       </tr>
+   </table>
+   <button ng-click="doOperation('add')" >+</button>
+   <button ng-click="doOperation('subtract')" >-</button>
+   <button ng-click="doOperation('multiply')" >*</button>
+   <button ng-click="doOperation('divide')" >/</button>
+   
+   <p>
+   Result is:  {{result}}
+   </p>
+</body>
+</html>
